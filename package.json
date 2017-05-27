@@ -1,0 +1,50 @@
+{
+  "name": "rollup_with_typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cleanup": "rimraf dist/bundle.js",
+    "watch": "rollup --watch -c",
+    "build": "npm run cleanup && rollup -c",
+    "serve": "live-server  build --entry-file=index.html --port=4200",
+    "start": "npm-run-all --parallel  watch serve"
+  },
+  "keywords": [
+    "rollup",
+    "angular2"
+  ],
+  "author": "vamsi krishna sridhara",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "live-server": "latest",
+    "lodash": "^4.17.4",
+    "npm-run-all": "latest",
+    "rimraf": "^2.6.1",
+    "rollup": "latest",
+    "rollup-plugin-alias": "latest",
+    "rollup-plugin-angular": "latest",
+    "rollup-plugin-buble": "^0.15.0",
+    "rollup-plugin-commonjs": "latest",
+    "rollup-plugin-inject": "^2.0.0",
+    "rollup-plugin-node-resolve": "latest",
+    "rollup-plugin-typescript": "latest",
+    "rollup-watch": "latest",
+    "underscore": "^1.8.3"
+  },
+  "dependencies": {
+    "debug": "latest",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "rimraf": "latest",
+    "rollup-plugin-buble": "^0.15.0",
+    "rollup-plugin-inject": "^2.0.0",
+    "rxjs": "latest",
+    "rxjs-es": "latest",
+    "underscore": "^1.8.3",
+    "zone.js": "latest",
+    "bootstrap": "3.3.7"
+  }
+}
